@@ -1,0 +1,17 @@
+.hero{
+	min-height: 35vw;
+	background-size: cover;
+	background-image: url("/img/hero.png");
+	padding: 3em;
+
+	@include respond-above(s){
+		padding-top: 10em;
+	}
+
+	.row{
+		text-align: center;
+		color: $accent;
+	}
+
+
+}
