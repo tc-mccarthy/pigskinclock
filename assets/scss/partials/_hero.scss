@@ -4,7 +4,11 @@
 	background-image: url("/img/hero.png");
 	padding: 3em;
 
-	@include respond-above(s){
+	@include bp(t){
+		padding-top: 5em;
+	}
+
+	@include bp(d){
 		padding-top: 10em;
 	}
 
