@@ -194,6 +194,24 @@ var pigskin = {
 
     onReady: function() {
         var _this = this;
+
+        this.setCountdown($(".countdown"));
+    },
+
+    setCountdown: function(ele) {
+        var _this = this;
+        ele.each(function() {
+            var ele = $(this),
+                clock = ele.FlipClock(_this.getSecondsRemaining("10/01/2016"), {
+                    countdown: true,
+                    clockFace: "dailyCounter",
+                    minimumDigits: 9
+                });
+        });
+    },
+
+    getSecondsRemaining: function(time) {
+        return moment(time).diff(moment(), "seconds");
     }
 };
 

@@ -1,8 +1,12 @@
 /* All pigskin styles */
 
+//external libs
 @import "_bootstrap";
+@import "_flipclock";
 
+//globals
 @import "_variables";
 @import "_mixins";
 
+//partials
 @import "_base";
